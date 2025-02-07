@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+	<!-- Google Font -->
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+
+	<!-------->
+
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+
+
+		.navMenu {
+			font-family: 'Helvetica', sans-serif;
+			padding: 8px;
+			text-align: center;
+			margin: 7px auto;
+			width: fit-content;
+		}
+
+		.navMenu a {
+			color: #948f9f;
+			text-decoration: none;
+			text-transform: uppercase;
+			display: inline-block;
+			padding: 6px;
+		}
+
+		.background {
+			background-color: #e9e8eb;
+		}
+
+		.border {
+			border: 1px solid #cccccc;
+
+		}
+
+		.navMenu a:hover {
+
+			color: #d09c0b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<nav class="navMenu  border">
+		<a id="home" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-house"></i> Home</a>
+		<a id="bachelor" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-window-restore"></i> Bachelor's Degree</a>
+		<a id="projects" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-folder"></i> Projects</a>
+		<a id="journal" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-calendar-week"></i> Journal</a>
+		<a id="tasks" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-list-check"></i> Tasks</a>
+		<a id="hobbies" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-bug"></i> Hobbies</a>
+		<a id="career" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-user-secret"></i> Career</a>
+		<a id="create" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-lightbulb"></i> Create</a>
+		<a id="planner" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-sitemap"></i> Planner</a>
+		<a id="materials" onclick="navigate(this.id)" href="#"> <i class="fa-solid fa-code-branch"></i> Materials</a>
+
+
+	</nav>
+
+
+	<script>
+
+		let direction = "horizontal";
+		if (direction === "vertical") {
+			document.head.insertAdjacentHTML("beforeend", `<style>.navMenu a {display: block; text-align:left; margin:7px} i{width:15px; margin-right:5px} .navMenu{margin:3px}</style>`)
+		}
+
+
+		function navigate(id) {
+
+			if (id == 'home')
+				window.open("https://www.notion.so/ULTIMATE-192830c7827180609b35cb9335725498?pvs=4", '_blank').focus();
+			else if (id == "bachelor")
+				window.open("https://www.notion.so/BACHELOR-S-DEGREE-18e830c78271800eb231c7bbf226e96e?pvs=4", '_blank').focus();
+			else if (id == "projects")
+				window.open("https://www.notion.so/PROJECTS-190830c7827180abb079db3de965b1cc?pvs=4", '_blank').focus();
+			else if (id == "journal")
+				window.open("https://www.notion.so/JOURNAL-192830c782718000b600ec3349aec12d?pvs=4", '_blank').focus();
+			else if (id == "tasks")
+				window.open("https://www.notion.so/192830c782718016aac4fe9966b116e6?v=192830c78271800a98ee000ca276e1ed&pvs=4", '_blank').focus();
+			else if (id == "hobbies")
+				window.open("https://www.notion.so/HOBBIES-190830c782718068be30c91966ad1014?pvs=4", '_blank').focus();
+			else if (id == "career")
+				window.open("https://www.notion.so/CAREER-193830c7827180a0857bcc3842806a00?pvs=4", '_blank').focus();
+			else if (id == "create")
+				window.open("https://www.notion.so/187830c7827181398152d082abb40618?v=187830c78271816e9552000c4ab83729&pvs=4", '_blank').focus();
+			else if (id == "planner")
+				window.open("https://www.notion.so/PERSONAL-SPACE-193830c7827180bab6f4c46e13e3f95d?pvs=4", '_blank').focus();
+			else if (id == "materials")
+				window.open("https://www.notion.so/MATERIALS-193830c78271804b9955e36d4bb8ae19?pvs=4", '_blank').focus();
+		
+
+		}
+	</script>
+
+
+</body>
+
+</html>
